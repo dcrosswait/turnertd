@@ -1,0 +1,166 @@
+<p>
+    Beginning with the 2015-2016, NBA TV Production will be using a new method of changing routes to TOC when transitioning from a show in one control room to
+    the other. The 3 control rooms that are part of this new workflow are PCR 21, PCR 24, and PCR 12.
+</p>
+<p>
+    In this new format, the external aux router in PCR 21 (on the bottom of the router stack to the left of the TD) will be the router used to swap routes to
+    TOC.
+    <strong>
+        What this means (and this can’t be emphasized enough), is that the switcher in PCR 21 is now the cross point to TOC. The PCR 21 switcher MUST remain
+        online and active when shows are being sent to TOC from either PCR 24 or PCR 12 (and of course, PCR 21). Do not restart this switcher under any
+        circumstances while shows are going on in PCR 24 or PCR 12 as it will kill the transmission to TOC.
+    </strong>
+</p>
+<p>
+    In order to accommodate this new setup, the outputs of PCR 24 and PCR 12 are routed into the preselect router in PCR 21. It’s important to note that for
+    each control room, we are taking <strong>output 2</strong> into the preselect router. This is done in order to accommodate the embedded audio which is part
+    of output 2 from each room.
+</p>
+<p>
+    In the current setup, we are using preselects 82-84. The routes on the preselect router in PCR 21 look like this (note that HD BARS are also routed to
+    PSL-68; this will be covered below):
+</p>
+<div align="center">
+    <table border="0" cellspacing="0" cellpadding="0" width="175">
+        <tbody>
+            <tr>
+                <td width="112" nowrap="" valign="bottom">
+                    <p align="center">
+                        Source
+                    </p>
+                </td>
+                <td width="63" nowrap="" valign="bottom">
+                    <p align="center">
+                        Destination
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="112" nowrap="" valign="bottom">
+                </td>
+                <td width="63" nowrap="" valign="bottom">
+                </td>
+            </tr>
+            <tr>
+                <td width="112" nowrap="" valign="bottom">
+                    <p>
+                        CR12_02
+                    </p>
+                </td>
+                <td width="63" nowrap="" valign="bottom">
+                    <p>
+                        PSL-58
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="112" nowrap="" valign="bottom">
+                    <p>
+                        CR24_02
+                    </p>
+                </td>
+                <td width="63" nowrap="" valign="bottom">
+                    <p>
+                        PSL-59
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="112" nowrap="" valign="bottom">
+                    <p>
+                        CR21_02
+                    </p>
+                </td>
+                <td width="63" nowrap="" valign="bottom">
+                    <p>
+                        PSL-60
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="112" nowrap="" valign="bottom">
+                    <p>
+                        TST-101 (HD BARS)
+                    </p>
+                </td>
+                <td width="63" nowrap="" valign="bottom">
+                    <p>
+                        PSL-57
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    The entire path from the PCR’s to TOC is detailed here:
+</p>
+<p>
+    · Output 2 of PCR 12, PCR 24, and PCR 21 is routed to Preselects 58-60 on the PCR 21 Preselect router (as represented above).
+</p>
+<p>
+    · PCR 24 and PCR 12 outputs are mapped as buttons on the switcher in PCR 21. PCR’s 12 and 24 will <strong>NEVER</strong> take PCR 21 as a source. Instead,
+    PCR 21 will take PCR’s 12 and 24 as a source when approaching a situation that requires a router change.
+</p>
+<p>
+    · Through the engineering setup on the Kayenne in PCR 21, output 52 of the switcher has been designated as Aux 52. This “Aux 52” destination is routable as
+    CR21_52, and Aux 52 has been set as ALL destinations on the External Aux router. Sources on this router are setup as PCR 21, PCR 24 and PCR 12.
+    Additionally, Bars and Black are set as sources on this router as well. None of the other buttons will be active on this router, and the buttons that can’t
+    be disabled through the engineering setup in the switcher (there are 8 of these buttons) will be permanently covered up. It should be noted that the Bars
+    source on the router is not internal switcher bars, but rather house bars (TST 101) as they have associated Audio. In order to accommodate this, another
+    preselect was required for Bars. <strong>We are using Preselect 57 for this route.</strong>
+</p>
+<p>
+· Output 52 of PCR 21 (CR21_52) is then being routed down Outbound Tie Lines 3 and 24 to TOC. This route is located on Page 15 of the    <strong>Preselect Router</strong> to the left of the TD in PCR 21. Please note that changing this router source is the ONLY way we can bypass the Aux
+    router, and <strong>this route should only be changed in the case of an emergency or malfunction with the switcher/router in PCR 21.</strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    The diagram below represents the full transmission path(s) from our Control Room(s) to TOC.
+</p>
+<p>
+    <strong>Example 1 – Throwing from Fan Duel to the Starters (PCR 21 throwing to PCR 24)</strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    1. PCR 21 TD is cutting his show with PCR 24 output (which is mapped as a button on PCR 21 switcher) in Preset.
+</p>
+<p>
+    2. Talent in PCR 21 throws to show in PCR 24, TD in PCR 21 dissolves to Preset. After this dissolve, the output of PCR 24 is online (but going through the
+    PCR 21 Program Output).
+    <strong>
+        It’s important at this stage that the Audio Operator is tracking both ACR 21 as well as ACR 24 and cross fading between the two when the TD in PCR 21
+        dissolves to PCR 24.
+    </strong>
+</p>
+<p>
+    3. At this point, TD in PCR 21 toggles the Aux router from PCR 21 to PCR 24. This router can be hot punched as all the sources are timed out properly.
+    Ideally, the hot punch would take place during the opening animation for the show in PCR 24, but realistically this hot punch can take place at any time.
+</p>
+<p>
+4. At this point, PCR 24 has direct control and the PCR 21 program output is freed up for pre-production elements.    <strong>To reiterate, it is vitally important that the switcher in PCR 21 does NOT get restarted or taken offline despite PCR 24 having control.</strong>
+</p>
+<p>
+    <strong>Example 2 – Throwing from Starters to Gametime (PCR 24 throwing to PCR 21)</strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    1. PCR 21 TD has black online and his first tape/camera in preset (as would be the case for any normal show).
+</p>
+<p>
+2. PCR 24 finishes up their show, and fades to black.    <strong>At this point, the TD in PCR 21 has to be ready to toggle control on the Aux router back to PCR 21. </strong>If PCR 24 is fading to black and
+taking a terminal break, then this change can happen at any point in the terminal break.    <strong>If not, the router toggle must happen before the PCR 21 TD runs their opening animation.</strong>
+</p>
+<p>
+    3. The TD in PCR 21 toggles the external router back to take PCR 21 as a source. As a reminder, the destination on this router will ALWAYS be Aux 52.
+</p>
+<p>
+    4. PCR 21 TD runs their opening animation and continues to do his show as they normally would. At this point, assuming PCR 21 is the last active control
+room for the day, router changes are done. However, if there is an integration game, the TD will need to repeat the same steps as in    <strong>Example 1</strong>, however they will be sending control to PCR 12 instead of PCR 21.
+</p>
